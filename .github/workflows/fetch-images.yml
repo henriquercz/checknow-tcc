@@ -1,0 +1,70 @@
+name: Download Images from Vercel
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/fetch-images.yml'
+
+jobs:
+  download-images:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create image directories
+        run: |
+          mkdir -p images/smartphone
+          mkdir -p images/guide-to-install
+          mkdir -p images/checkito
+          mkdir -p images/fontes
+
+      - name: Download logo and main images
+        run: |
+          curl -L "https://checknowbr.vercel.app/images/logo-com-nome-e-sem-fundo.png" -o images/logo-com-nome-e-sem-fundo.png
+          curl -L "https://checknowbr.vercel.app/images/logo-fundo-branco.png" -o images/logo-fundo-branco.png
+          curl -L "https://checknowbr.vercel.app/images/logo-sem-fundo.png" -o images/logo-sem-fundo.png
+
+      - name: Download smartphone screenshots
+        run: |
+          curl -L "https://checknowbr.vercel.app/images/smartphone/home.PNG" -o images/smartphone/home.PNG
+          curl -L "https://checknowbr.vercel.app/images/smartphone/veredito.PNG" -o images/smartphone/veredito.PNG
+          curl -L "https://checknowbr.vercel.app/images/smartphone/noticias.PNG" -o images/smartphone/noticias.PNG
+          curl -L "https://checknowbr.vercel.app/images/smartphone/educacao.PNG" -o images/smartphone/educacao.PNG
+
+      - name: Download guide-to-install images
+        run: |
+          for i in 00 01 02 03 04 05 06 07 08; do
+            curl -L "https://checknowbr.vercel.app/images/guide-to-install/passo${i}.jpg" -o "images/guide-to-install/passo${i}.jpg"
+          done
+
+      - name: Download checkito images
+        run: |
+          curl -L "https://checknowbr.vercel.app/images/checkito/checkito_confuso.png" -o images/checkito/checkito_confuso.png
+          curl -L "https://checknowbr.vercel.app/images/checkito/checkito_tela1.png" -o images/checkito/checkito_tela1.png
+          curl -L "https://checknowbr.vercel.app/images/checkito/checkito_tela2.png" -o images/checkito/checkito_tela2.png
+          curl -L "https://checknowbr.vercel.app/images/checkito/checkito_tela3.png" -o images/checkito/checkito_tela3.png
+          curl -L "https://checknowbr.vercel.app/images/checkito/checkito_tela4.png" -o images/checkito/checkito_tela4.png
+
+      - name: Download news source logos
+        run: |
+          curl -L "https://checknowbr.vercel.app/images/fontes/g1.png" -o images/fontes/g1.png
+          curl -L "https://checknowbr.vercel.app/images/fontes/uol.png" -o images/fontes/uol.png
+          curl -L "https://checknowbr.vercel.app/images/fontes/estadao.png" -o images/fontes/estadao.png
+          curl -L "https://checknowbr.vercel.app/images/fontes/veja.png" -o images/fontes/veja.png
+          curl -L "https://checknowbr.vercel.app/images/fontes/cnn.png" -o images/fontes/cnn.png
+          curl -L "https://checknowbr.vercel.app/images/fontes/bbc.png" -o images/fontes/bbc.png
+          curl -L "https://checknowbr.vercel.app/images/fontes/ebc.png" -o images/fontes/ebc.png
+          curl -L "https://checknowbr.vercel.app/images/fontes/cartacapital.png" -o images/fontes/cartacapital.png
+          curl -L "https://checknowbr.vercel.app/images/fontes/portal-metropoles.png" -o images/fontes/portal-metropoles.png
+          curl -L "https://checknowbr.vercel.app/images/fontes/terra-brasil.png" -o images/fontes/terra-brasil.png
+
+      - name: Commit and push images
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add images/
+          git diff --quiet && git diff --staged --quiet || git commit -m "feat: adiciona imagens do app CheckNow via download automatico"
+          git push
