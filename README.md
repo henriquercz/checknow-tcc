@@ -56,13 +56,50 @@ A desinformação é uma ameaça real à democracia e à saúde pública. O Chec
 
 Este projeto foi desenvolvido com dedicação pelos alunos do curso de **Desenvolvimento de Sistemas** da **Etec de Taboão da Serra**:
 
-| Nome | Função |
-|------|--------|
-| **Henrique Rezende** | Desenvolvedor Full Stack & Líder Técnico |
-| **Pedro Henrique** | Desenvolvedor Mobile & UI/UX |
-| **André Vinicius** | Desenvolvedor Backend & Banco de Dados |
+<table align="center">
+<tr>
+<td align="center">
+<img src="https://github.com/henriquercz.png" width="100px;" alt="Henrique Rezende"/><br />
+<sub><b>Henrique Rezende</b></sub><br />
+<sub>Desenvolvedor Full-Stack</sub><br />
+<a href="https://github.com/henriquercz">🐙 GitHub</a> •
+<a href="mailto:henriquechagas06@gmail.com">📧 Email</a>
+</td>
 
-**Orientador:** Prof. responsável pelo TCC — Etec de Taboão da Serra
+<td align="center">
+<img src="https://github.com/guiguizy11.png" width="100px;" alt="Guilherme Ferreira"/><br />
+<sub><b>Guilherme Ferreira</b></sub><br />
+<sub>Documentação</sub><br />
+<a href="https://github.com/guiguizy11">🐙 GitHub</a> •
+<a href="mailto:henriquechagas06@gmail.com">📧 Email</a>
+</td>
+
+<td align="center">
+<img src="https://github.com/liuzinho777.png" width="100px;" alt="Artur Liu"/><br />
+<sub><b>Artur Liu</b></sub><br />
+<sub>Documentação</sub><br />
+<a href="https://github.com/liuzinho777">🐙 GitHub</a> •
+<a href="mailto:henriquechagas06@gmail.com">📧 Email</a>
+</td>
+
+<td align="center">
+<img src="https://github.com/FelipeFreitas91.png" width="100px;" alt="Felipe Freitas"/><br />
+<sub><b>Felipe Freitas</b></sub><br />
+<sub>Documentação</sub><br />
+<a href="https://github.com/FelipeFreita91">🐙 GitHub</a> •
+<a href="mailto:henriquechagas06@gmail.com">📧 Email</a>
+</td>
+
+<td align="center">
+<img src="https://github.com/gabriel-moreira10.png" width="100px;" alt="Gabriel Moreira"/><br />
+<sub><b>Gabriel Moreira</b></sub><br />
+<sub>Documentação</sub><br />
+<a href="https://github.com/gabriel-moreira10">🐙 GitHub</a> •
+<a href="mailto:henriquechagas06@gmail.com">📧 Email</a>
+</td>
+
+</tr>
+</table>
 
 </div>
 
