@@ -77,7 +77,7 @@ Este projeto foi desenvolvido com dedicação pelos alunos do curso de **Desenvo
 <td align="center">
 <img src="https://github.com/liuzinho777.png" width="100px;" alt="Artur Liu"/><br />
 <sub><b>Artur Liu</b></sub><br />
-<sub>Documentação</sub><br />
+<sub>Documentação / Desenvolvimento</sub><br />
 <a href="https://github.com/liuzinho777">🐙 GitHub</a> •
 <a href="mailto:henriquechagas06@gmail.com">📧 Email</a>
 </td>
@@ -93,7 +93,7 @@ Este projeto foi desenvolvido com dedicação pelos alunos do curso de **Desenvo
 <td align="center">
 <img src="https://github.com/gabriel-moreira10.png" width="100px;" alt="Gabriel Moreira"/><br />
 <sub><b>Gabriel Moreira</b></sub><br />
-<sub>Documentação</sub><br />
+<sub>Desenvolvimento</sub><br />
 <a href="https://github.com/gabriel-moreira10">🐙 GitHub</a> •
 <a href="mailto:henriquechagas06@gmail.com">📧 Email</a>
 </td>
